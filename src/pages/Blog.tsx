@@ -25,7 +25,6 @@ export default function Blog() {
       <main className="min-h-screen bg-white text-[#09090B] selection:bg-blue-600 selection:text-white">
         <Header />
 
-        {/* 1. CINEMATIC HERO */}
         <section className="pt-48 pb-32 px-6">
           <div className="max-w-[1200px] mx-auto">
             <div className="overflow-hidden mb-6">
@@ -44,25 +43,21 @@ export default function Blog() {
           </div>
         </section>
 
-        {/* 2. SOPHISTICATED LIST REVEAL */}
         <section className="pb-40 px-6">
           <div className="max-w-[1200px] mx-auto border-t border-zinc-100">
             {blogPosts.map((post) => (
-              // Entire article is now wrapped in a Link for high usability
               <Link
                 key={post.id}
                 to={`/blog/${post.id}`}
                 className="block group"
               >
                 <article className="relative grid md:grid-cols-12 gap-8 py-16 border-b border-zinc-100 transition-all duration-700 hover:bg-[#FAFAFA] cursor-pointer">
-                  {/* Index Column */}
+              
                   <div className="md:col-span-1 hidden md:block">
                     <span className="text-sm font-mono text-zinc-200 group-hover:text-blue-600 transition-colors duration-500 font-bold">
                       {post.id}
                     </span>
                   </div>
-
-                  {/* Main Content Column */}
                   <div className="md:col-span-7 space-y-6">
                     <div className="flex items-center gap-4">
                       <span className="text-[10px] font-mono font-bold tracking-widest text-blue-600 uppercase">
@@ -84,8 +79,6 @@ export default function Blog() {
                       <span className="flex items-center gap-2 font-bold text-zinc-200 group-hover:text-zinc-400 transition-colors">BY_{post.author}</span>
                     </div>
                   </div>
-
-                  {/* Image Preview Column */}
                   <div className="md:col-span-4 relative flex items-center justify-end">
                     <div className="relative w-full h-[240px] md:h-full md:aspect-[4/3] overflow-hidden transition-all duration-1000 ease-in-out">
                       <img
@@ -95,8 +88,6 @@ export default function Blog() {
                       />
                       <div className="absolute inset-0 bg-blue-600/0 group-hover:bg-blue-600/5 transition-colors duration-700" />
                     </div>
-
-                    {/* Float-out Arrow */}
                     <div className="absolute -right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:right-0 transition-all duration-700">
                       <div className="w-14 h-14 bg-black text-white flex items-center justify-center rounded-full shadow-xl">
                         <ArrowUpRight size={24} />
@@ -108,8 +99,6 @@ export default function Blog() {
             ))}
           </div>
         </section>
-
-        {/* 3. MINIMALIST SYSTEM CALLOUT */}
         <section className="py-40 bg-zinc-50 border-t border-zinc-100">
           <div className="max-w-[1200px] mx-auto px-6 text-center">
             <h2 className="text-4xl md:text-6xl font-bold tracking-tighter mb-12">
@@ -132,4 +121,5 @@ export default function Blog() {
       </main>
     </>
   )
+
 }
