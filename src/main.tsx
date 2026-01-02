@@ -5,8 +5,6 @@ import { HelmetProvider } from 'react-helmet-async'
 import { ThemeProvider } from './components/theme-provider'
 import App from './App'
 import './index.css'
-
-// Import fonts (equivalent to Next.js font imports)
 import '@fontsource/geist-sans'
 import '@fontsource/geist-mono'
 
@@ -21,3 +19,4 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     </HelmetProvider>
   </React.StrictMode>,
 )
+
