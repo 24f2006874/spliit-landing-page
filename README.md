@@ -1,65 +1,55 @@
-# SPLLIT React
+# Spllit
 
-A modern React application built with Vite, TypeScript, and Tailwind CSS.
+## What is Spllit?
 
-## Getting Started
+Spllit is a trusted social platform for sharing everyday costs — starting with travel.
+Whether you're a student heading to campus or a professional commuting to work, Spllit connects you with verified co-travelers on your route — so you can connect, split, and save — securely.
+It begins with ride-sharing, but that's just the start.
+From movies to trips, food to events — if you can split it, you can Spllit it.
+One platform. Every shared experience.
 
-### Install dependencies
+## What Problem Does Split Solve?
 
-```bash
-npm install
-```
+Millions of Indians — Mostly students and professionals — face:
 
-### Run development server
+**High daily transport costs:**
+Example: A student commuting to exams or a professional heading to work may spend ₹300–₹400/day on cabs or bike taxis. Over a month, that adds up to ₹9,000–₹12,000.
+This is especially painful during exam seasons, interviews, and in cities with few public transport options.
 
-```bash
-npm run dev
-```
+**Lack of a verified co-travel network:**
+There's no trusted app where you can safely find peers to split rides with — especially for college, coaching, exams, or shared routines.
 
-### Build for production
+**Safety and trust issues:**
+Pooling with strangers from random WhatsApp or Telegram groups feels risky. People worry about scams, harassment, and general discomfort, especially women.
 
-```bash
-npm run build
-```
+**Overcrowded Roads & CO₂ Emissions**
+India ranks among the top global emitters.
+Urban India is choking under traffic. Single-occupancy ride culture floods the streets with cabs, bikes, and cars — causing more traffic, longer commute times, and massive air pollution.
 
-### Preview production build
+## Spllit: The Solution
 
-```bash
-npm run preview
-```
+Verified ride-sharing that saves money, cuts traffic, and builds community.
 
-## Features
+### Broader Problems Spllit Tackles
 
-- ⚡️ Vite - Fast build tool
-- ⚛️ React 18
-- 🎨 Tailwind CSS - Utility-first CSS
-- 📘 TypeScript - Type safety
-- 🧭 React Router - Client-side routing
-- 🎭 Radix UI - Accessible components
-- 🎬 Framer Motion - Animations
-- 📋 React Hook Form - Form management
-- ✅ Zod - Schema validation
+**Traffic Congestion:**
+India's urban centers like Bengaluru, Chennai, Delhi, and Mumbai are crippled by traffic due to excessive single-occupancy vehicle use.
+Spllit promotes shared rides, reducing the number of vehicles on roads.
 
-## Project Structure
+**Air Pollution & CO2 Emissions:**
+Shared mobility reduces per-capita emissions by pooling multiple riders into one vehicle.
+Example: Carpooling reduces up to 1.6 tons of CO2 per person annually (source: EPA, USA).
 
-```
-src/
-  ├── components/     # Reusable components
-  ├── pages/          # Page components
-  ├── lib/            # Utility functions
-  └── main.tsx        # App entry point
-```
+**Inclusion & Affordability:**
+Makes commuting accessible to students, interns, and job seekers, especially in Tier 2 & 3 cities where public transport is limited.
 
-## Next Steps
+**Verified, Secure Ride Matching:**
+Split lets users discover verified co-riders from their college, office, or exam centers. No random strangers — just people like you, heading the same way.
 
-To complete the migration from Next.js:
+**Smart Matching for Shared Travel:**
+Enter your destination, time, and gender preference — get matched instantly.
+See who's heading the same way and split the ride.
 
-1. Open the SPLLIT folder in VS Code
-2. Copy all component files from the components/ directory
-3. Copy all page content from the app/ directory
-4. Adapt Next.js specific features (Image, Link) to React equivalents
-5. Test the application
-
-## License
-
-Private
+**Safety-First Design:**
+Real-time location tracking, gender preference matching, and in-app chat after match.
+Co-travellers ratings and behavior scores based on previous trips.
