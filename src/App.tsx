@@ -18,7 +18,6 @@ import TermsOfService from './pages/TermsOfService'
 function App() {
   return (
     <>
-      {/* Global Metadata */}
       <Helmet>
         <title>SPLLIT</title>
         <meta name="description" content="Connect. Spllit. Save." />
@@ -34,7 +33,6 @@ function App() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-        {/* Website Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -49,7 +47,6 @@ function App() {
           })}
         </script>
 
-        {/* Organization Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -92,3 +89,4 @@ function App() {
 }
 
 export default App
+
