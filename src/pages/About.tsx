@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet-async'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-// Professional Reveal
 const fader = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
@@ -21,8 +20,6 @@ export default function About() {
       </Helmet>
       <main className="min-h-screen bg-[#FAFAFA] text-[#09090B] selection:bg-blue-100">
         <Header />
-
-        {/* 1. HERO - ARCHITECTURAL LAYOUT */}
         <section className="pt-48 pb-32 px-6">
           <div className="max-w-[1200px] mx-auto">
             <motion.div {...fader}>
@@ -40,8 +37,6 @@ export default function About() {
             </motion.div>
           </div>
         </section>
-
-        {/* 2. CORE VALUES - 3 COLUMN CLEAN GRID */}
         <section className="border-y border-slate-200 bg-white">
           <div className="max-w-[1200px] mx-auto grid md:grid-cols-3 divide-x divide-slate-200">
             {[
@@ -65,7 +60,6 @@ export default function About() {
           </div>
         </section>
 
-        {/* 3. THE "WHY" - SPLIT CONTENT */}
         <section className="py-32 px-6">
           <div className="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-24 items-start">
             <motion.div {...fader} className="sticky top-32">
@@ -89,7 +83,6 @@ export default function About() {
           </div>
         </section>
 
-        {/* 4. STATS - MINIMALIST STRIP */}
         <section className="py-24 bg-black text-white rounded-[2rem] mx-4 mb-32">
           <div className="max-w-[1200px] mx-auto px-12 grid grid-cols-2 md:grid-cols-4 gap-12">
             {[
@@ -106,7 +99,6 @@ export default function About() {
           </div>
         </section>
 
-        {/* 5. TEAM - CLEAN ROW INTERFACE */}
         <section className="pb-48 px-6">
           <div className="max-w-[1200px] mx-auto">
             <h2 className="text-xs font-mono text-slate-400 uppercase tracking-[0.3em] mb-12">Leadership</h2>
@@ -140,4 +132,5 @@ export default function About() {
       </main>
     </>
   )
+
 }
