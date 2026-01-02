@@ -66,6 +66,7 @@ export default function FAQ() {
       <main className="min-h-screen bg-[#FAFAFA] text-[#09090B]">
         <Header />
 
+        {/* HERO */}
         <section className="pt-40 pb-24 px-6">
           <div className="max-w-[1000px] mx-auto">
             <span className="text-[10px] font-mono tracking-[0.3em] uppercase text-blue-600 font-bold block mb-6">
@@ -82,6 +83,7 @@ export default function FAQ() {
           </div>
         </section>
 
+        {/* FAQ CONTENT */}
         <section className="pb-32 px-6">
           <div className="max-w-[1000px] mx-auto space-y-20">
             {faqs.map((section, sectionIdx) => (
@@ -132,8 +134,9 @@ export default function FAQ() {
           </div>
         </section>
 
+        {/* STILL GOT QUESTIONS – ARCHITECTURAL CTA */}
         <section className="pb-40 px-6">
-          <div className="max-w-[1000px] mx-auto border border-zinc-200 bg-white p-12 md:p-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-10">
+          <div className="max-w-[1000px] mx-auto border border-zinc-200 bg-white p-12 md:p-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-10 hover-3d-depth layered-3d">
             <div>
               <h3 className="text-3xl font-bold tracking-tight mb-3">
                 Still got questions?
@@ -158,5 +161,4 @@ export default function FAQ() {
       </main>
     </>
   )
-
 }

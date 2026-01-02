@@ -149,7 +149,8 @@ export default function GreenPlanetPage() {
                 <motion.div
                   key={index}
                   whileHover={{ y: -8, scale: 1.02 }}
-                  className="group relative overflow-hidden p-8 rounded-[2.5rem] bg-white border border-zinc-100 hover:border-green-600/30 transition-all duration-500 hover:shadow-[0_40px_80px_-20px_rgba(22,163,74,0.08)]"
+                  className="group relative overflow-hidden p-8 rounded-[2.5rem] bg-white border border-zinc-100 hover:border-green-600/30 transition-all duration-500 hover:shadow-[0_40px_80px_-20px_rgba(22,163,74,0.08)] layered-3d hover-3d-depth animate-rotate-in-3d"
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="relative z-10 text-center">
                     <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-green-50 text-green-600 mx-auto mb-6 group-hover:bg-green-600 group-hover:text-white transition-all duration-500">

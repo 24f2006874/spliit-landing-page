@@ -140,7 +140,8 @@ export default function SplitExperiencePage() {
                 <motion.div
                   key={index}
                   whileHover={{ y: -8 }}
-                  className="group relative overflow-hidden p-8 rounded-[2.5rem] bg-white border border-zinc-100 hover:border-purple-600/30 transition-all duration-500 hover:shadow-[0_40px_80px_-20px_rgba(147,51,234,0.08)]"
+                  className="group relative overflow-hidden p-8 rounded-[2.5rem] bg-white border border-zinc-100 hover:border-purple-600/30 transition-all duration-500 hover:shadow-[0_40px_80px_-20px_rgba(147,51,234,0.08)] layered-3d hover-3d-depth animate-rotate-in-3d"
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="absolute -top-4 -right-2 text-7xl font-black text-zinc-50 group-hover:text-purple-50 transition-colors duration-500 select-none pointer-events-none">
                     {item.id.split('_')[1]}
@@ -172,7 +173,7 @@ export default function SplitExperiencePage() {
               <h2 className="text-4xl font-black text-white tracking-tighter uppercase">See Spllit in Action</h2>
             </div>
 
-            <div className="relative group cursor-pointer aspect-video bg-zinc-900 rounded-[3rem] border border-white/10 overflow-hidden flex items-center justify-center shadow-2xl">
+            <div className="relative group cursor-pointer aspect-video bg-zinc-950 rounded-[3rem] border border-white/10 overflow-hidden flex items-center justify-center shadow-2xl hover-3d-depth layered-3d">
                <div className="absolute inset-0 opacity-40 group-hover:opacity-60 transition-opacity bg-[url('https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80')] bg-cover bg-center" />
                <div className="relative z-10 flex flex-col items-center">
                   <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-zinc-950 scale-100 group-hover:scale-110 transition-transform">

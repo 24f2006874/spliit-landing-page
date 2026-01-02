@@ -35,7 +35,7 @@ export default function ContactUs() {
       <main className="min-h-screen bg-white">
         <Header />
 
-
+        {/* Hero Section */}
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-50 to-purple-100">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl sm:text-6xl font-bold mb-6 font-poppins text-gray-900">Get in Touch</h1>
@@ -43,6 +43,7 @@ export default function ContactUs() {
           </div>
         </section>
 
+        {/* Contact Section */}
         <section className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12">
@@ -99,6 +100,7 @@ export default function ContactUs() {
                 </div>
               </div>
 
+              {/* Contact Form */}
               <div className="animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
@@ -181,5 +183,4 @@ export default function ContactUs() {
       </main>
     </>
   )
-
 }

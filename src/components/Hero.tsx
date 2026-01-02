@@ -19,9 +19,9 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           {/* Status Badge */}
-          <div className={`inline-flex items-center gap-3 px-5 py-2 bg-white border border-zinc-200 rounded-full mb-10 shadow-sm transition-all duration-1000 ${isLoaded ? "opacity-100 scale-100" : "opacity-0 scale-90"} animate-bounce-in`}>
-            <Activity size={14} className="text-purple-600 animate-pulse" />
-            <span className="text-[11px] font-bold tracking-[0.2em] text-zinc-800 uppercase">
+          <div className={`inline-flex items-center gap-3 px-5 py-2 bg-white border border-zinc-200 rounded-full mb-10 shadow-sm transition-all duration-1000 spllit-glow-hover ${isLoaded ? "opacity-100 scale-100" : "opacity-0 scale-90"} animate-bounce-in`}>
+            <Activity size={14} className="text-purple-600 animate-connect-pulse" />
+            <span className="text-[11px] font-bold tracking-[0.2em] text-zinc-800 uppercase trust-indicator">
               Launching Soon in Chennai
             </span>
           </div>
@@ -29,7 +29,7 @@ export default function Hero() {
           {/* Main Heading */}
           <h1 className={`text-5xl sm:text-7xl lg:text-[100px] font-black text-zinc-900 mb-8 leading-[0.9] tracking-tighter transition-all duration-700 delay-100 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"} animate-shimmer`}>
             SIMPLIFY YOUR <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600 animate-glow">EVERYDAY TRAVEL</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600 animate-gentle-glow animate-trust-wave">EVERYDAY TRAVEL</span>
           </h1>
 
           {/* Description */}
@@ -40,9 +40,9 @@ export default function Hero() {
           {/* CTA Button */}
           <div className={`flex justify-center transition-all duration-700 delay-300 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"} animate-scale-in`}>
             <a href="mailto:hello@spllit.in?subject=Early Access Request" className="w-full sm:w-auto">
-              <Button className="w-full sm:w-auto bg-black hover:bg-zinc-800 text-white px-12 py-7 rounded-full font-bold text-sm uppercase tracking-widest transition-all duration-500 group shadow-xl border border-white/10 hover:animate-glow">
+              <Button className="w-full sm:w-auto bg-black hover:bg-zinc-800 text-white px-12 py-7 rounded-full font-bold text-sm uppercase tracking-widest transition-all duration-500 group shadow-xl border border-white/10 spllit-hover-lift animate-gentle-bounce">
                 Get Early Access
-                <ChevronRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                <ChevronRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform animate-gentle-bounce" />
               </Button>
             </a>
           </div>
@@ -50,15 +50,15 @@ export default function Hero() {
 
         {/* PHONE MOCKUPS */}
         <div className="relative h-[400px] sm:h-[500px] lg:h-[650px] flex items-center justify-center mb-24">
-          <div className={`hidden lg:block absolute left-[10%] w-52 h-[420px] rounded-[3rem] border border-zinc-200 bg-white/80 backdrop-blur-sm p-2 shadow-xl transition-all duration-1000 delay-500 ${isLoaded ? "translate-x-0 opacity-60 rotate-[-15deg]" : "-translate-x-20 opacity-0"}`}>
+          <div className={`hidden lg:block absolute left-[10%] w-52 h-[420px] rounded-[3rem] border border-zinc-200 bg-white/80 backdrop-blur-sm p-2 shadow-xl transition-all duration-1000 delay-500 spllit-card-hover hover-3d-depth ${isLoaded ? "translate-x-0 opacity-60 rotate-[-15deg]" : "-translate-x-20 opacity-0"}`}>
             <img src="/mobile-app-interface-payment.jpg" alt="Interface" className="w-full h-full object-cover rounded-[2.5rem] opacity-80" />
           </div>
 
-          <div className={`relative z-20 w-64 h-[520px] sm:w-80 sm:h-[600px] bg-zinc-900 rounded-[3.5rem] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.3)] border-[10px] border-zinc-900 flex items-center justify-center overflow-hidden transition-all duration-1000 delay-300 ${isLoaded ? "scale-100 translate-y-0" : "scale-90 translate-y-20 opacity-0"}`}>
+          <div className={`relative z-20 w-64 h-[520px] sm:w-80 sm:h-[600px] bg-zinc-900 rounded-[3.5rem] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.3)] border-[10px] border-zinc-900 flex items-center justify-center overflow-hidden transition-all duration-1000 delay-300 spllit-glow-hover animate-subtle-tilt hover-3d-pulse card-3d ${isLoaded ? "scale-100 translate-y-0" : "scale-90 translate-y-20 opacity-0"}`}>
             <img src="/mobile-app-transfer-interface-blue.jpg" alt="Main Interface" className="w-full h-full object-cover" />
           </div>
 
-          <div className={`hidden lg:block absolute right-[10%] w-52 h-[420px] rounded-[3rem] border border-zinc-200 bg-white/80 backdrop-blur-sm p-2 shadow-xl transition-all duration-1000 delay-500 ${isLoaded ? "translate-x-0 opacity-60 rotate-[15deg]" : "translate-x-20 opacity-0"}`}>
+          <div className={`hidden lg:block absolute right-[10%] w-52 h-[420px] rounded-[3rem] border border-zinc-200 bg-white/80 backdrop-blur-sm p-2 shadow-xl transition-all duration-1000 delay-500 spllit-card-hover hover-3d-depth ${isLoaded ? "translate-x-0 opacity-60 rotate-[15deg]" : "translate-x-20 opacity-0"}`}>
             <img src="/mobile-app-account-settings.jpg" alt="Settings" className="w-full h-full object-cover rounded-[2.5rem] opacity-80" />
           </div>
         </div>

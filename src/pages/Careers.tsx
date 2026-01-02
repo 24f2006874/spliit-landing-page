@@ -48,7 +48,7 @@ export default function Careers() {
       <main className="min-h-screen bg-white">
         <Header />
 
- 
+        {/* Hero Section */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-600 to-purple-700 text-white">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl sm:text-6xl font-bold mb-6 font-poppins">Join Our Team</h1>
@@ -58,6 +58,7 @@ export default function Careers() {
           </div>
         </section>
 
+        {/* Join Community Section */}
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-50 to-emerald-50 border-t-4 border-green-500">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold font-poppins text-gray-900 mb-4">Join Our Community</h2>
@@ -77,6 +78,7 @@ export default function Careers() {
           </div>
         </section>
 
+        {/* Job Listings */}
         <section className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold font-poppins text-gray-900 mb-4">Open Positions</h2>
@@ -113,6 +115,7 @@ export default function Careers() {
           </div>
         </section>
 
+        {/* Why Join Section */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-50 to-purple-100">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold font-poppins text-gray-900 mb-12 text-center">Why Join SPLLIT?</h2>
@@ -144,5 +147,4 @@ export default function Careers() {
       </main>
     </>
   )
-
 }

@@ -7,6 +7,7 @@ import { Helmet } from 'react-helmet-async'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
+// 1. BETA-PHASE DATABASE (₹ RUPEES & INITIAL METRICS)
 const postData: Record<string, any> = {
   "01": {
     title: "Unlock Smarter Sharing",
@@ -110,6 +111,8 @@ export default function BlogPost() {
       <main className="min-h-screen bg-[#09090B] text-white selection:bg-white selection:text-black">
         <Header />
         <motion.div className={`fixed top-0 left-0 right-0 h-[2px] ${post.bg} z-[100] origin-left`} style={{ scaleX }} />
+
+        {/* HERO SECTION */}
         <section className="relative h-[70vh] flex items-end px-6 pb-20 overflow-hidden border-b border-white/5">
           <motion.div style={{ y: imageY }} className="absolute inset-0 z-0">
             <img src={post.img} alt="" className="w-full h-full object-cover opacity-40 grayscale-[0.3]" />
@@ -132,6 +135,7 @@ export default function BlogPost() {
           </div>
         </section>
 
+        {/* CONTENT AREA */}
         <section className="max-w-[1200px] mx-auto px-6 py-24 grid lg:grid-cols-12 gap-16">
           <div className="lg:col-span-8">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
@@ -146,6 +150,7 @@ export default function BlogPost() {
                   over mass-scale expansion. This ensure that every shared transit node maintains a high standard of reliability.
                 </p>
 
+                {/* PERSONALIZED STAT BOXES */}
                 <div className="grid md:grid-cols-2 gap-6 py-8">
                   <div className="p-10 bg-white/[0.02] border border-white/5 hover:bg-white/[0.04] transition-all group">
                     <div className={`mb-6 ${post.color} group-hover:scale-110 transition-transform`}>
@@ -193,6 +198,7 @@ export default function BlogPost() {
           </aside>
         </section>
 
+        {/* NEXT LOG */}
         <section className="pb-32 px-6">
           <div className="max-w-[1200px] mx-auto">
             <Link to={`/blog/${post.next}`} className="group block relative border-t border-white/5 pt-16 hover:bg-white/[0.01] transition-colors p-8">
@@ -215,5 +221,4 @@ export default function BlogPost() {
       </main>
     </>
   )
-
 }

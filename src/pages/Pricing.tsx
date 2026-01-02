@@ -65,9 +65,9 @@ export default function PricingPage() {
 
             {/* Title Reveal */}
             <div className="overflow-hidden mb-8">
-              <h1 className="text-6xl md:text-[80px] font-bold tracking-tight leading-[0.95] animate-in fade-in slide-in-from-bottom-full duration-1000 ease-out">
+              <h1 className="text-6xl md:text-[80px] font-bold tracking-tight leading-[0.95] animate-in fade-in slide-in-from-bottom-full duration-1000 ease-out animate-gentle-float">
                 Simple, transparent <br />
-                <span className="text-slate-400">pricing logic.</span>
+                <span className="text-slate-400 animate-slide-up">pricing logic.</span>
               </h1>
             </div>
             
@@ -102,7 +102,7 @@ export default function PricingPage() {
               {pricingPlans.map((plan, index) => (
                 <div 
                   key={index} 
-                  className="bg-white p-10 md:p-16 flex flex-col group transition-all duration-700 hover:bg-[#FDFDFD] relative overflow-hidden"
+                  className="bg-white p-10 md:p-16 flex flex-col group transition-all duration-700 hover:bg-[#FDFDFD] relative overflow-hidden spllit-card-hover spllit-hover-lift animate-money-save layered-3d hover-3d-depth"
                 >
                   {/* ID Counter Animation */}
                   <span className="absolute top-10 right-10 text-5xl font-mono text-zinc-100 group-hover:text-zinc-200 transition-colors duration-500">
@@ -121,12 +121,12 @@ export default function PricingPage() {
 
                   <div className="mb-16 relative z-10">
                     <div className="flex items-baseline gap-3 mb-2">
-                      <span className="text-7xl font-bold tracking-tighter transition-transform duration-500 group-hover:scale-105 origin-left">
+                      <span className="text-7xl font-bold tracking-tighter transition-transform duration-500 group-hover:scale-105 origin-left animate-money-save">
                         ₹{plan.price}
                       </span>
                       <span className="text-slate-300 text-xl font-light">/ {billingPeriod.slice(0, -2)}</span>
                     </div>
-                    <div className="inline-flex items-center gap-2 border border-blue-100 bg-blue-50/50 px-3 py-1 animate-pulse">
+                    <div className="inline-flex items-center gap-2 border border-blue-100 bg-blue-50/50 px-3 py-1 animate-connect-pulse trust-indicator">
                       <span className="text-[10px] font-mono font-bold text-blue-600 uppercase tracking-widest">
                         {plan.discount} SAVING
                       </span>
@@ -148,16 +148,16 @@ export default function PricingPage() {
                   </div>
 
                   {/* ARCHITECTURAL BUTTON WITH LIQUID FILL ANIMATION */}
-                  <button className="relative w-full h-20 bg-black text-white group/btn overflow-hidden transition-transform active:scale-95 duration-300">
+                  <button className="relative w-full h-20 bg-black text-white group/btn overflow-hidden transition-transform active:scale-95 duration-300 spllit-glow-hover animate-gentle-bounce">
                     {/* The "Liquid" Fill */}
-                    <div className="absolute inset-0 bg-blue-600 translate-y-full transition-transform duration-500 ease-[cubic-bezier(0.85,0,0.15,1)] group-hover/btn:translate-y-0" />
+                    <div className="absolute inset-0 bg-blue-600 translate-y-full transition-transform duration-500 ease-[cubic-bezier(0.85,0,0.15,1)] group-hover/btn:translate-y-0 animate-gentle-bounce" />
                     
                     <div className="relative z-10 flex items-center justify-between px-8">
                       <span className="text-[10px] font-mono font-bold uppercase tracking-[0.2em]">
                         {plan.cta}
                       </span>
                       <div className="overflow-hidden w-6 h-6">
-                        <ArrowUpRight className="w-6 h-6 transition-all duration-500 transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 group-hover/btn:rotate-45" />
+                        <ArrowUpRight className="w-6 h-6 transition-all duration-500 transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 group-hover/btn:rotate-45 animate-gentle-bounce" />
                       </div>
                     </div>
                   </button>

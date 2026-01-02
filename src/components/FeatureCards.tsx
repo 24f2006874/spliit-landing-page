@@ -51,8 +51,7 @@ export default function FeatureCards() {
             Core_Modules // 01
           </span>
           <h2 className="text-5xl md:text-7xl font-black text-zinc-900 tracking-tighter leading-none uppercase animate-slide-up animate-delay-200">
-            WHY <span className="text-zinc-400 animate-shimmer">CHOOSE</span> <br />
-            SPLLIT_SYSTEMS
+            Core_Modules
           </h2>
         </div>
 
@@ -72,7 +71,11 @@ export default function FeatureCards() {
                   transition-all duration-500 ease-out
                   hover:bg-white ${feature.border}
                   hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)]
-                  hover:scale-105 animate-bounce-in animate-delay-${idx * 100}
+                  spllit-card-hover spllit-hover-lift animate-bounce-in animate-delay-${idx * 100}
+                  layered-3d hover-3d-depth
+                  ${feature.id === 'planet' ? 'eco-pulse' : ''}
+                  ${feature.id === 'communities' ? 'animate-floating-cards' : ''}
+                  ${feature.id === 'split' ? 'animate-pulse-3d' : ''}
                 `}>
 
                   {/* ICON AREA */}
@@ -80,30 +83,33 @@ export default function FeatureCards() {
                     transition-all duration-500 text-zinc-400
                     group-hover:scale-110 group-hover:rotate-6 ${feature.accent}
                     animate-rotate-in animate-delay-${idx * 50}
+                    ${feature.id === 'communities' ? 'animate-connect-pulse' : ''}
+                    ${feature.id === 'planet' ? 'animate-eco-float' : ''}
+                    ${feature.id === 'split' ? 'animate-heart-connect' : ''}
                   `}>
                     {feature.icon}
                   </div>
 
                   {/* TEXT CONTENT */}
                   <div className="flex-1 ml-8 md:ml-12">
-                    <h3 className="text-2xl md:text-4xl font-black text-zinc-900 tracking-tighter uppercase mb-2 group-hover:animate-shimmer">
+                    <h3 className="text-2xl md:text-4xl font-black text-zinc-900 tracking-tighter uppercase mb-2 group-hover:animate-shimmer animate-slide-up">
                       {feature.title}
                     </h3>
-                    <p className="text-zinc-500 text-sm md:text-lg font-medium tracking-tight">
+                    <p className="text-zinc-500 text-sm md:text-lg font-medium tracking-tight animate-fade-in-up">
                       {feature.description}
                     </p>
                   </div>
 
                   {/* TACTICAL ARROW */}
                   <div className="hidden md:flex items-center gap-4">
-                    <span className="text-[10px] font-mono font-bold text-zinc-300 opacity-0 group-hover:opacity-100 transition-opacity animate-typewriter">
+                    <span className="text-[10px] font-mono font-bold text-zinc-300 opacity-0 group-hover:opacity-100 transition-opacity animate-typewriter trust-indicator">
                       VIEW_DETAILS
                     </span>
                     <div className={`
                       w-14 h-14 flex items-center justify-center rounded-full
                       border border-zinc-200 transition-all duration-500
                       group-hover:translate-x-2 group-hover:bg-zinc-900 group-hover:text-white
-                      group-hover:animate-glow
+                      spllit-glow-hover animate-shared-journey
                     `}>
                       <ArrowRight className="w-6 h-6" />
                     </div>

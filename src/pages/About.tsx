@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
+// Professional Reveal
 const fader = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
@@ -20,23 +21,27 @@ export default function About() {
       </Helmet>
       <main className="min-h-screen bg-[#FAFAFA] text-[#09090B] selection:bg-blue-100">
         <Header />
+
+        {/* 1. HERO - ARCHITECTURAL LAYOUT */}
         <section className="pt-48 pb-32 px-6">
           <div className="max-w-[1200px] mx-auto">
             <motion.div {...fader}>
-              <span className="text-[10px] font-mono tracking-[0.3em] text-blue-600 uppercase font-bold mb-6 block">
+              <span className="text-[10px] font-mono tracking-[0.3em] text-blue-600 uppercase font-bold mb-6 block animate-connect-pulse">
                 Established 2024
               </span>
-              <h1 className="text-6xl md:text-[90px] font-bold tracking-tight leading-[0.9] mb-12">
+              <h1 className="text-6xl md:text-[90px] font-bold tracking-tight leading-[0.9] mb-12 animate-gentle-float">
                 The platform for <br />
-                <span className="text-slate-400">modern transit.</span>
+                <span className="text-slate-400 animate-slide-up">modern transit.</span>
               </h1>
-              <p className="text-2xl text-slate-500 max-w-2xl leading-relaxed font-light">
+              <p className="text-2xl text-slate-500 max-w-2xl leading-relaxed font-light animate-slide-up">
                 Spllit is an infrastructure company. We build the protocols and systems
                 that turn empty car seats into a global, reliable transit network.
               </p>
             </motion.div>
           </div>
         </section>
+
+        {/* 2. CORE VALUES - 3 COLUMN CLEAN GRID */}
         <section className="border-y border-slate-200 bg-white">
           <div className="max-w-[1200px] mx-auto grid md:grid-cols-3 divide-x divide-slate-200">
             {[
@@ -48,18 +53,19 @@ export default function About() {
                 key={i}
                 {...fader}
                 transition={{ delay: i * 0.1 }}
-                className="p-12 md:p-16 hover:bg-slate-50 transition-colors group"
+                className={`p-12 md:p-16 hover:bg-slate-50 transition-colors group spllit-card-hover layered-3d hover-3d-morph animate-slide-up`}
               >
-                <div className="mb-8 text-blue-600 group-hover:scale-110 transition-transform duration-300">
+                <div className={`mb-8 text-blue-600 group-hover:scale-110 transition-transform duration-300 animate-heart-connect`}>
                   {item.icon}
                 </div>
-                <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
-                <p className="text-slate-500 leading-relaxed text-sm">{item.text}</p>
+                <h3 className="text-xl font-semibold mb-4 animate-slide-up">{item.title}</h3>
+                <p className="text-slate-500 leading-relaxed text-sm animate-fade-in-up">{item.text}</p>
               </motion.div>
             ))}
           </div>
         </section>
 
+        {/* 3. THE "WHY" - SPLIT CONTENT */}
         <section className="py-32 px-6">
           <div className="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-24 items-start">
             <motion.div {...fader} className="sticky top-32">
@@ -83,6 +89,7 @@ export default function About() {
           </div>
         </section>
 
+        {/* 4. STATS - MINIMALIST STRIP */}
         <section className="py-24 bg-black text-white rounded-[2rem] mx-4 mb-32">
           <div className="max-w-[1200px] mx-auto px-12 grid grid-cols-2 md:grid-cols-4 gap-12">
             {[
@@ -99,6 +106,7 @@ export default function About() {
           </div>
         </section>
 
+        {/* 5. TEAM - CLEAN ROW INTERFACE */}
         <section className="pb-48 px-6">
           <div className="max-w-[1200px] mx-auto">
             <h2 className="text-xs font-mono text-slate-400 uppercase tracking-[0.3em] mb-12">Leadership</h2>
@@ -132,5 +140,4 @@ export default function About() {
       </main>
     </>
   )
-
 }

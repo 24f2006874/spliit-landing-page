@@ -155,7 +155,8 @@ export default function SafetyPage() {
                 <motion.div
                   key={idx}
                   whileHover={{ y: -8, scale: 1.02 }}
-                  className="group relative overflow-hidden p-8 rounded-[2.5rem] bg-white border border-zinc-100 hover:border-red-600/30 transition-all duration-500 hover:shadow-[0_40px_80px_-20px_rgba(220,38,38,0.08)]"
+                  className="group relative overflow-hidden p-8 rounded-[2.5rem] bg-white border border-zinc-100 hover:border-red-600/30 transition-all duration-500 hover:shadow-[0_40px_80px_-20px_rgba(220,38,38,0.08)] layered-3d hover-3d-depth animate-rotate-in-3d"
+                  style={{ animationDelay: `${idx * 0.1}s` }}
                 >
                   <div className="absolute -top-4 -right-2 text-8xl font-black text-zinc-50 group-hover:text-red-50 transition-colors duration-500 select-none pointer-events-none">
                     {item.id}
